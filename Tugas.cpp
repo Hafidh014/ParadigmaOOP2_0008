@@ -20,5 +20,15 @@ public:
         cout << "------------------------" << endl;
     }
 
+    virtual ~RekeningBank() {}
+};
 
+
+class RekeningBRI : public RekeningBank {
+public:
+    RekeningBRI(string nama, double saldo)
+        : RekeningBank(nama, saldo) {}
+
+    void potongAdmin() override {
+    }
 };
