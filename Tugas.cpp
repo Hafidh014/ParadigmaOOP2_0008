@@ -12,5 +12,7 @@ public:
         this->saldo = saldo;
     }
 
+    virtual void potongAdmin() = 0;
+
 
 };
